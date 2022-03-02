@@ -1,8 +1,18 @@
-import React from "react";
-import ReactDOM  from "react-dom";
-import Header from "../header/Header.jsx"
+import React from "react"
+import Header from "../header/Header"
+import Footer from "../footer/footer"
+import Tours from "../tours/Tours"
 
 
-ReactDOM.render(<Header/> , document.getElementById("header"));
-ReactDOM.render(<Tours/> , document.getElementById("Tours"));
-ReactDOM.render(<Footer/> , document.getElementById("Footer"));
+function Home({Data})
+{
+    return(
+        <>
+        <Header/>
+        <Tours Data={Data}/>
+        <Footer/>
+        </>
+    )
+}
+
+export default Home;
