@@ -1,9 +1,10 @@
 import React from "react";
+import NavBar from "../Navbar/Navbar.jsx";
 
-function Header()
-{
-    return(
-        <h1>Travel Destination</h1>
+function Header(){
+    return (
+        <NavBar />
     )
 }
+
 export default Header;
