@@ -9,7 +9,7 @@ function Home({Data})
     return(
         <>
         <Header/>
-        <Tours Data={Data}/>
+        <Tours Data = {Data}/>
         <Footer/>
         </>
     )
