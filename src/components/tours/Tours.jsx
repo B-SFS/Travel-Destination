@@ -1,21 +1,26 @@
-import React from "react";
+import React from 'react'
+import "../tours/Tours.css"
+import Tour from "../tours/tour/Tour.jsx";
+import Header from "../header/Header.jsx";
+import Footer from "../footer/footer.jsx";
 
-let Tour = (prop) =>{
-    return(
-   <>
-   {
-       prop.Data.map(city =>{
-           return(
-            <div key={city.id}>
-            <h2>{city.name}</h2>
-            <img src={city.image} alt={city.name+"image"} />
-            </div>
-           )
-       })
-   }
-   </>
+function Tours(props){
+    // console.log(props);
+    return (
+        <>
+        <Header />
+        {
+            props.tours.map( (tour) => {
+                return(
+                    <div className="container" key={tour.id}>
+                        <Tour tour={tour}/>
+                    </div>
+                )
+            })
+        }
+        <Footer />
+        </>
     )
-
 }
 
-export default Tour;
+export default Tours;

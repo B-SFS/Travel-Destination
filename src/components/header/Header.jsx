@@ -1,9 +1,9 @@
 import React from "react";
-
+import NavBar from "../navbar/NavBar";
 function Header()
 {
     return(
-        <h1>Travel Destination</h1>
+       <NavBar/>
     )
 }
 export default Header;
